@@ -210,6 +210,40 @@ public class BalkonsWeaponMod
 	
 	private void addModItems()
 	{
+		
+		// Recipes
+		// uses 1 item cookie and 7 block sponge in the pattern to make 1 diamond.
+		GameRegistry.addRecipe(new ItemStack(Items.diamond), 
+			"y y", 
+			"yxy", 
+			"yyy", 
+			'y', Blocks.sponge, 
+			'x', Items.cookie 
+		);
+		
+		//uses 4 iron in a the pattern to make 2 gold.(The same shape of a crafting bench put it must be in the top left corner of the grid)
+		GameRegistry.addRecipe(new ItemStack(Items.gold_ingot, 2), 
+			"xx ", 
+			"xx ", 
+			"   ", 
+			'x', Items.iron_ingot 
+		);
+		
+		//uses 8 black wool(1 being the count, 15 being the damage which makes it black) 1 gold block to make 1 diamond block 
+		GameRegistry.addRecipe(new ItemStack(Blocks.diamond_block), 
+			"yyy", 
+			"yxy", 
+			"yyy", 
+			'y', new ItemStack(Blocks.wool, 1, 15), 
+			'x', Blocks.gold_block
+		);
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.diamond), Items.gold_ingot, Items.gold_ingot, Items.gold_ingot, Items.gold_ingot);//uses 4 gold bars placed anywhere in the crafting table to get 1 diamond(have to be placed separately not stacked on top of each other)
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.diamond, 2), Items.gold_ingot, Items.gold_ingot, Items.gold_ingot, Items.gold_ingot, Items.diamond);// uses 4 gold and 1 diamond to give you 2 diamonds.
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.wool, 1 ,5), Blocks.wool, Items.stick);// uses 1 wool of any color and 1 stick to give you 1 lime wool. (1 being the count, 5 being the metadata making the wool lime colored).
+
 		if (modConfig.isEnabled("spear"))
 		{
 			spearWood = new ItemMelee("spear.wood", new MeleeCompSpear(Item.ToolMaterial.WOOD));
@@ -360,6 +394,27 @@ public class BalkonsWeaponMod
 	
 	private void registerWeapons()
 	{
+		
+		GameRegistry.addRecipe(new ItemStack(Blocks.obsidian), new Object[]{
+	    	"AAA",
+	    	"AAA",
+	    	"AAA",
+	    	'A', Items.cookie
+		});
+		
+		GameRegistry.addRecipe(new ItemStack(Items.apple, 4), new Object[]{
+	    	"AA",
+	    	"AA",
+	    	'A', Blocks.cobblestone
+		});
+		
+		GameRegistry.addRecipe(new ItemStack(Items.dye, 2, 15), new Object[]{
+		    	"AB ",
+		    	"AAC",
+		    	"A  ",
+		    	'A', Items.cookie, 'B', Blocks.dirt, 'C', new ItemStack(Items.dye, 1, 1)
+		});
+
 		if (modConfig.isEnabled("spear"))
 		{
 			GameRegistry.addRecipe(new ShapedOreRecipe(spearWood, "  #", " X ", "X  ", 'X', "stickWood", '#', "plankWood"));
