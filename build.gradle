@@ -96,7 +96,8 @@ def getTimestampSuffix() {
        return date.format('yyyy-MM-dd_HH-mm-ss')
 }
 
-version = "${config.mod_version}-${config.mod_builder_tok}-${getTimestampSuffix()}"
+//version = "${config.mod_version}-${config.mod_builder_tok}-${getTimestampSuffix()}"
+version = "${config.mod_version}"
 
 // uses 'maven central' for resolving your dependencies; any Maven/Ivy/file repository can be given
 repositories {
@@ -127,7 +128,8 @@ jar {
 	// create a version plate for the beginning of the mod name to avoid confusion as to which
 	// version of minecraft/forge this build was for; at some point in the future would like to 
 	// expand this to create multiple builds as necessary for different Minecraft/Forge versions
-	baseName = "[${config.minecraft_version}-${config.forge_version}]${config.mod_basename}"
+	//baseName = "[${config.minecraft_version}-${config.forge_version}]${config.mod_basename}"
+	baseName = "${config.mod_basename}"
 	appendix = 'universal'
 	
 	// don't put in the version.properties file if it exists, and definitely leave out the MCP 
