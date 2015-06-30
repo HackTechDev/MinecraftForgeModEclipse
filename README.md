@@ -10,8 +10,11 @@ To setup workspace using Eclipse on Linux:
   
 To build the project:  
 1. ./gradlew build  
-  
+ 
+To check the build:  
+1. ls -ltr build/libs/weaponmod-universal-1.15.0.jar 
+
 To install the mod:  
-1.  cp build/libs/weaponmod-universal.jar ~/.minecraft/mods  
+1.  cp build/libs/weaponmod-universal-1.15.0.jar ~/.minecraft/mods  
   
 Update: LeSanglier  
