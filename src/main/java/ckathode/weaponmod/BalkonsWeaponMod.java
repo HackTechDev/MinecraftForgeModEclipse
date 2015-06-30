@@ -71,6 +71,11 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+import ckathode.weaponmod.block.ModBlocks;
+import ckathode.weaponmod.crafting.ModCrafting;
+import ckathode.weaponmod.item.ModItems;
+
+
 @Mod(modid = BalkonsWeaponMod.MOD_ID, name = BalkonsWeaponMod.MOD_NAME, version = BalkonsWeaponMod.MOD_VERSION)
 public class BalkonsWeaponMod
 {
@@ -194,6 +199,9 @@ public class BalkonsWeaponMod
 		addRecipes();
 		Entities.preinit();
 		ClientProxy.init();
+		ModItems.init();
+		ModBlocks.init();
+		
 	}
 	
 	@EventHandler
