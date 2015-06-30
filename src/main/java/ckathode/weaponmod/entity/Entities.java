@@ -1,5 +1,6 @@
 package ckathode.weaponmod.entity;
 
+import ckathode.weaponmod.entity.scorpioid.EntityScorpioid;
 import cpw.mods.fml.common.registry.EntityRegistry;
 
 public class Entities {

@@ -1,4 +1,4 @@
-package ckathode.weaponmod.entity;
+package ckathode.weaponmod.entity.scorpioid;
 
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.SharedMonsterAttributes;

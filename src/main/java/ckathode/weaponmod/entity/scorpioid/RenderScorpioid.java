@@ -1,4 +1,4 @@
-package ckathode.weaponmod.entity;
+package ckathode.weaponmod.entity.scorpioid;
 
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
