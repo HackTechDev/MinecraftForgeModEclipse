@@ -207,12 +207,11 @@ public class BalkonsWeaponMod
 	/*
 	 * Add command
 	 */
-	
-	 @EventHandler
-	  public void serverLoad(FMLServerStartingEvent event)
-	  {
-	    event.registerServerCommand(new SampleCommand());
-	  }
+
+	@EventHandler
+	public void serverLoad(FMLServerStartingEvent event) {
+		event.registerServerCommand(new SampleCommand());
+	}
 	
 	@EventHandler
 	public void postInitMod(FMLPostInitializationEvent event)
