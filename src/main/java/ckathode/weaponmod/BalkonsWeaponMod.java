@@ -57,6 +57,8 @@ import ckathode.weaponmod.item.RangedCompCrossbow;
 import ckathode.weaponmod.item.RangedCompFlintlock;
 import ckathode.weaponmod.item.WMItem;
 import ckathode.weaponmod.network.WMMessagePipeline;
+import ckathode.weaponmod.Entities;
+import ckathode.weaponmod.ClientProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -189,6 +191,8 @@ public class BalkonsWeaponMod
 		
 		addModItems();
 		addRecipes();
+		Entities.preinit();
+		ClientProxy.init();
 	}
 	
 	@EventHandler
