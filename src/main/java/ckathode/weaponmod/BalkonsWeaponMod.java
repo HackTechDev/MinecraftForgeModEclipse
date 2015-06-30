@@ -187,6 +187,7 @@ public class BalkonsWeaponMod
 		modConfig.loadConfig();
 		
 		addModItems();
+		addRecipes();
 	}
 	
 	@EventHandler
@@ -208,9 +209,8 @@ public class BalkonsWeaponMod
 		messagePipeline.postInitialize();
 	}
 	
-	private void addModItems()
+	private void addRecipes() 
 	{
-		
 		// Recipes
 		// uses 1 item cookie and 7 block sponge in the pattern to make 1 diamond.
 		GameRegistry.addRecipe(new ItemStack(Items.diamond), 
@@ -243,7 +243,11 @@ public class BalkonsWeaponMod
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.diamond, 2), Items.gold_ingot, Items.gold_ingot, Items.gold_ingot, Items.gold_ingot, Items.diamond);// uses 4 gold and 1 diamond to give you 2 diamonds.
 		
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.wool, 1 ,5), Blocks.wool, Items.stick);// uses 1 wool of any color and 1 stick to give you 1 lime wool. (1 being the count, 5 being the metadata making the wool lime colored).
-
+		
+	}
+	private void addModItems()
+	{
+		
 		if (modConfig.isEnabled("spear"))
 		{
 			spearWood = new ItemMelee("spear.wood", new MeleeCompSpear(Item.ToolMaterial.WOOD));
