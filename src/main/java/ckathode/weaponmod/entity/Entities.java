@@ -1,4 +1,4 @@
-package ckathode.weaponmod;
+package ckathode.weaponmod.entity;
 
 import cpw.mods.fml.common.registry.EntityRegistry;
 

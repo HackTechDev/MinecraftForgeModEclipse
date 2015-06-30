@@ -1,4 +1,4 @@
-package ckathode.weaponmod;
+package ckathode.weaponmod.entity;
 
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.SharedMonsterAttributes;

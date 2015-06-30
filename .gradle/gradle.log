@@ -8,9 +8,15 @@
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava UP-TO-DATE
-:compileJava UP-TO-DATE
-:processResources
+:sourceMainJava
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+Note: /home/util01/MINECRAFT/DEV/BALKONWEAPON/MinecraftForgeModEclipse/build/sources/java/ckathode/weaponmod/item/ItemShooter.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/util01/MINECRAFT/DEV/BALKONWEAPON/MinecraftForgeModEclipse/build/sources/java/ckathode/weaponmod/SampleCommand.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+1 warning
+
+:processResources UP-TO-DATE
 :classes
 :jar
 :compileTestJava UP-TO-DATE
@@ -28,4 +34,4 @@
 
 BUILD SUCCESSFUL
 
-Total time: 18.317 secs
+Total time: 21.026 secs

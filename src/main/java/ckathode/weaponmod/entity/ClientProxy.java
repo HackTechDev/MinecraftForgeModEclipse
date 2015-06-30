@@ -1,4 +1,4 @@
-package ckathode.weaponmod;
+package ckathode.weaponmod.entity;
 
 import java.io.InputStream;
 import java.net.MalformedURLException;

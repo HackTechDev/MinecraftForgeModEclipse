@@ -1,4 +1,4 @@
-package ckathode.weaponmod;
+package ckathode.weaponmod.entity;
 
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;

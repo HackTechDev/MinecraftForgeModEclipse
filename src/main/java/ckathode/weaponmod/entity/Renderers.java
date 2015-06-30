@@ -1,10 +1,7 @@
-package ckathode.weaponmod;
+package ckathode.weaponmod.entity;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.client.MinecraftForgeClient;
-
-import ckathode.weaponmod.RenderScorpioid;
-
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 

@@ -10,6 +10,8 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import org.apache.logging.log4j.Logger;
 
+import ckathode.weaponmod.entity.ClientProxy;
+import ckathode.weaponmod.entity.Entities;
 import ckathode.weaponmod.entity.EntityCannon;
 import ckathode.weaponmod.entity.EntityDummy;
 import ckathode.weaponmod.entity.projectile.EntityBlowgunDart;
@@ -57,8 +59,6 @@ import ckathode.weaponmod.item.RangedCompCrossbow;
 import ckathode.weaponmod.item.RangedCompFlintlock;
 import ckathode.weaponmod.item.WMItem;
 import ckathode.weaponmod.network.WMMessagePipeline;
-import ckathode.weaponmod.Entities;
-import ckathode.weaponmod.ClientProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
