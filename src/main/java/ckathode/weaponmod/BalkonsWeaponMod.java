@@ -10,6 +10,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import org.apache.logging.log4j.Logger;
 
+import ckathode.weaponmod.command.SampleCommand;
 import ckathode.weaponmod.entity.ClientProxy;
 import ckathode.weaponmod.entity.Entities;
 import ckathode.weaponmod.entity.EntityCannon;

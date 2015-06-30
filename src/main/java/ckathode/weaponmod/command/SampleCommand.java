@@ -1,4 +1,4 @@
-package ckathode.weaponmod;
+package ckathode.weaponmod.command;
 
 import java.util.ArrayList;
 import java.util.List;
