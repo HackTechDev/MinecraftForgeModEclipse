@@ -272,6 +272,7 @@ public class BalkonsWeaponMod
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.wool, 1 ,5), Blocks.wool, Items.stick);// uses 1 wool of any color and 1 stick to give you 1 lime wool. (1 being the count, 5 being the metadata making the wool lime colored).
 		
 	}
+	
 	private void addModItems()
 	{
 		
